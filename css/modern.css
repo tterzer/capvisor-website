@@ -221,28 +221,28 @@ hr.cv-hr{border-top:1px solid var(--cv-border);margin:0;}
 /* Fixed pixel sizes (not rem) so these can't be diluted by any inherited
    base font-size from Bootstrap/legacy styles.css. These are the actual
    rendered sizes in the browser, deliberately large for a marketing site. */
-body, .container, p, li{font-size:18px !important;line-height:1.65;}
-h1{font-size:64px !important;line-height:1.1;}
-h2{font-size:42px !important;line-height:1.2;}
-h3{font-size:26px !important;line-height:1.3;}
-h4{font-size:20px !important;}
-.lead{font-size:22px !important;line-height:1.55;}
+body, .container, p, li{font-size:16px !important;line-height:1.65;}
+h1{font-size:38px !important;line-height:1.15;}
+h2{font-size:30px !important;line-height:1.25;}
+h3{font-size:22px !important;line-height:1.3;}
+h4{font-size:18px !important;}
+.lead{font-size:18px !important;line-height:1.55;}
 
 .navbar-default .navbar-nav>li>a{
-  font-size:18px !important;
+  font-size:16px !important;
   font-weight:600;
-  padding-top:24px;
-  padding-bottom:24px;
+  padding-top:22px;
+  padding-bottom:22px;
 }
 
 .nav-tabs>li>a{
-  font-size:17px !important;
+  font-size:15px !important;
   font-weight:600;
   padding:10px 16px;
 }
 
-.cv-bio h4{font-size:24px !important;}
-.cv-bio-title{font-size:17px !important;}
-.cv-card h3{font-size:22px !important;}
-.cv-stat .cv-stat-label{font-size:17px !important;}
-footer.cv-footer, footer.cv-footer p{font-size:17px !important;}
+.cv-bio h4{font-size:20px !important;}
+.cv-bio-title{font-size:15px !important;}
+.cv-card h3{font-size:19px !important;}
+.cv-stat .cv-stat-label{font-size:15px !important;}
+footer.cv-footer, footer.cv-footer p{font-size:15px !important;}
