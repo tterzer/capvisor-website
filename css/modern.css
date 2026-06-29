@@ -33,14 +33,12 @@ h1,h2,h3,h4,h5{
   letter-spacing:-0.01em;
 }
 
-h1{font-size:2.4rem;}
-h2{font-size:1.9rem;margin-bottom:1rem;}
-h3{font-size:1.3rem;}
+h2{margin-bottom:1rem;}
 
 .cv-eyebrow{
   text-transform:uppercase;
-  letter-spacing:.12em;
-  font-size:.75rem;
+  letter-spacing:.1em;
+  font-size:18px !important;
   font-weight:700;
   color:var(--cv-red);
   margin-bottom:.5rem;
@@ -238,14 +236,13 @@ h4{font-size:20px !important;}
 }
 
 .nav-tabs>li>a{
-  font-size:1rem !important;
+  font-size:17px !important;
   font-weight:600;
   padding:10px 16px;
 }
 
-.cv-bio h4{font-size:1.3rem !important;}
-.cv-bio-title{font-size:.92rem !important;}
-.cv-card h3{font-size:1.2rem !important;}
-.cv-eyebrow{font-size:.8rem !important;}
-.cv-stat .cv-stat-label{font-size:.95rem !important;}
-footer.cv-footer, footer.cv-footer p{font-size:.95rem !important;}
+.cv-bio h4{font-size:24px !important;}
+.cv-bio-title{font-size:17px !important;}
+.cv-card h3{font-size:22px !important;}
+.cv-stat .cv-stat-label{font-size:17px !important;}
+footer.cv-footer, footer.cv-footer p{font-size:17px !important;}
