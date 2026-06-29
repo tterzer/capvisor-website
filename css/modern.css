@@ -115,6 +115,12 @@ h2{margin-bottom:1rem;}
   height:100%;
   transition:box-shadow .15s ease, transform .15s ease;
 }
+
+/* Equal-height card grids: apply .cv-grid-row to the .row wrapping
+   columns of .cv-card so every card in the row matches the tallest one */
+.cv-grid-row{display:flex;flex-wrap:wrap;}
+.cv-grid-row > [class*="col-"]{display:flex;margin-bottom:20px;}
+.cv-grid-row > [class*="col-"] > .cv-card{width:100%;}
 .cv-card:hover{box-shadow:0 10px 30px rgba(11,31,58,.08);transform:translateY(-2px);}
 .cv-card h3{margin-top:0;}
 .cv-card .cv-card-number{
@@ -129,17 +135,24 @@ h2{margin-bottom:1rem;}
   margin-bottom:16px;
 }
 
-/* Navy variant — used for the Archives page boxes */
-.cv-card-navy{
-  background:var(--cv-navy);
-  border:1px solid var(--cv-navy);
+/* Dark card variants — used for the Archives page boxes. All three share
+   the same gradient treatment as the hero so the navy actually matches;
+   black and red give the row some variation. */
+.cv-card-navy, .cv-card-black, .cv-card-red{
+  border:none;
   color:#fff;
 }
-.cv-card-navy h3{color:#fff;}
-.cv-card-navy a{color:#fff;text-decoration:underline;}
-.cv-card-navy a:hover{color:#ff8a93;}
-.cv-card-navy .nav-tabs>li>a{color:#fff;background:transparent;border:none;}
+.cv-card-navy{background:linear-gradient(135deg, var(--cv-navy) 0%, var(--cv-navy-light) 100%);}
+.cv-card-black{background:linear-gradient(135deg, #14171c 0%, #2a2f3a 100%);}
+.cv-card-red{background:linear-gradient(135deg, var(--cv-red-dark) 0%, var(--cv-red) 100%);}
+
+.cv-card-navy h3, .cv-card-black h3, .cv-card-red h3{color:#fff;}
+.cv-card-navy a, .cv-card-black a, .cv-card-red a{color:#fff;text-decoration:underline;}
+.cv-card-navy a:hover, .cv-card-black a:hover, .cv-card-red a:hover{color:#ffd9dc;}
+.cv-card-navy .nav-tabs>li>a, .cv-card-black .nav-tabs>li>a, .cv-card-red .nav-tabs>li>a{color:#fff;background:transparent;border:none;}
 .cv-card-navy .nav-tabs>li.active>a{color:var(--cv-navy);background:#fff;}
+.cv-card-black .nav-tabs>li.active>a{color:#14171c;background:#fff;}
+.cv-card-red .nav-tabs>li.active>a{color:var(--cv-red-dark);background:#fff;}
 
 /* Stat callouts */
 .cv-stat{
@@ -162,7 +175,8 @@ h2{margin-bottom:1rem;}
   border-left:4px solid var(--cv-red);
   padding:18px 24px;
   background:var(--cv-gray-light);
-  font-size:1.05rem;
+  font-size:19px !important;
+  font-weight:600;
   color:var(--cv-navy);
   margin:24px 0;
 }
@@ -183,7 +197,7 @@ h2{margin-bottom:1rem;}
 }
 .cv-portfolio-chip .cv-portfolio-mix{
   color:var(--cv-gray);
-  font-size:.92rem;
+  font-size:15px !important;
 }
 
 /* People / bios */
