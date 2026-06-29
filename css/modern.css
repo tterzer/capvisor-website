@@ -154,6 +154,44 @@ h2{margin-bottom:1rem;}
 .cv-card-black .nav-tabs>li.active>a{color:#14171c;background:#fff;}
 .cv-card-red .nav-tabs>li.active>a{color:var(--cv-red-dark);background:#fff;}
 
+/* Testimonials */
+.cv-testimonial{
+  background:#fff;
+  border:1px solid var(--cv-border);
+  border-radius:8px;
+  padding:32px;
+  height:100%;
+  position:relative;
+}
+.cv-testimonial::before{
+  content:"\201C";
+  font-size:60px;
+  font-family:Georgia, serif;
+  color:var(--cv-red);
+  line-height:1;
+  display:block;
+  margin-bottom:8px;
+}
+.cv-testimonial p.cv-testimonial-quote{
+  font-size:17px !important;
+  font-style:italic;
+  color:var(--cv-ink);
+  line-height:1.6;
+}
+.cv-testimonial .cv-testimonial-attribution{
+  display:block;
+  margin-top:16px;
+  font-weight:700;
+  color:var(--cv-navy);
+  font-style:normal;
+}
+.cv-testimonial .cv-testimonial-org{
+  display:block;
+  color:var(--cv-gray);
+  font-size:14px;
+  font-style:normal;
+}
+
 /* Stat callouts */
 .cv-stat{
   text-align:center;
