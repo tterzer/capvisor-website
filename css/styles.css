@@ -1,0 +1,119 @@
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+   font-family: helvetica, sans-serif;
+   font-size:16px;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+font-size:16px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.logo {
+height:50px;
+width:250px;
+margin-top:-18px;
+margin-bottom:-15px;
+margin-right:-10px;
+margin-left:-20px}
+
+.row {
+margin-bottom:20px;
+}
+
+.homepage {
+background-image:url('IMG_1086.jpg');
+font-size:24px;
+height:500px;
+}
+
+.hero-cta {
+color:black;
+background-color:#F0F0F0;
+opacity:0.9;
+padding:60px 40px;
+font-size:20px;
+height:500px
+}
+
+.btn-default {
+margin-top:10px;
+}
+
+.hero-cta-2 {
+color:black;
+background-color:#F0F0F0;
+opacity:0.9;
+padding:60px 40px;
+font-size:20px;
+height:400px;
+}
+
+
+.industries {
+padding-top:10px;
+padding-bottom:40px;
+background-image:url('sticky-notes-2.jpg');
+}
+
+.industries-background {
+height:280px;
+width:100%;
+background-color:white;
+opacity:0.9;
+padding:10px;
+margin-top:15px
+
+}
+
+.industries-text {
+
+color:black;
+opacity:1
+}
+
+.philosophy {
+ padding-top:30px;
+ }
+
+.management {
+margin-bottom:20px
+}
+
+.whycapvisor {
+
+background-image:url('IMG_0965.jpg');
+width:100%;
+height:400px
+}
+
+
+
+.case-studies {
+
+background-image:url('IMG_1230.jpg');
+width:100%;
+height:400px
+}
+
+.about-us {
+
+background-image:url('IMG_0834.jpg');
+width:100%;
+height:400px
+
+}
+
+
+.whycapvisor-research {
+background-image:url('IMG_0982.jpg');
+background-size:100% 200%
+
+}
+

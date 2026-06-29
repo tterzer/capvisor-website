@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?capvisorassociates\.com$ [NC]
+RewriteRule ^(.*)$ https://capvisorassociates.com/$1 [L,R=301]
+</IfModule>
