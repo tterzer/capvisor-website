@@ -1,0 +1,209 @@
+/* CapVisor Associates — modern design system, 2026 redesign */
+
+:root{
+  --cv-navy:#0b1f3a;
+  --cv-navy-light:#13315c;
+  --cv-red:#b3122a;
+  --cv-red-dark:#8c0e21;
+  --cv-ink:#1a1f29;
+  --cv-gray:#5a6472;
+  --cv-gray-light:#eef1f5;
+  --cv-border:#dfe3ea;
+  --cv-bg:#ffffff;
+  --cv-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  font-family:var(--cv-font);
+  color:var(--cv-ink);
+  line-height:1.65;
+  background:var(--cv-bg);
+  -webkit-font-smoothing:antialiased;
+}
+
+a{color:var(--cv-red);text-decoration:none;}
+a:hover, a:focus{color:var(--cv-red-dark);text-decoration:underline;}
+
+h1,h2,h3,h4,h5{
+  font-family:var(--cv-font);
+  font-weight:700;
+  color:var(--cv-navy);
+  letter-spacing:-0.01em;
+}
+
+h1{font-size:2.4rem;}
+h2{font-size:1.9rem;margin-bottom:1rem;}
+h3{font-size:1.3rem;}
+
+.cv-eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.75rem;
+  font-weight:700;
+  color:var(--cv-red);
+  margin-bottom:.5rem;
+  display:block;
+}
+
+/* Navbar override */
+.navbar.navbar-default.navbar-fixed-top{
+  background:var(--cv-bg);
+  border-bottom:1px solid var(--cv-border);
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+}
+.navbar-default .navbar-nav>li>a{
+  color:var(--cv-navy);
+  font-weight:600;
+  font-size:.92rem;
+  letter-spacing:.01em;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li.active>a{
+  color:var(--cv-red);
+  background:transparent;
+}
+.navbar-brand img.logo{max-height:42px;width:auto;}
+
+/* Hero sections */
+.cv-hero{
+  background:linear-gradient(135deg, var(--cv-navy) 0%, var(--cv-navy-light) 100%);
+  color:#fff;
+  padding:90px 0 70px;
+  margin-top:50px;
+}
+.cv-hero h1, .cv-hero h2{color:#fff;}
+.cv-hero .lead{
+  font-size:1.15rem;
+  color:#dfe6f0;
+  max-width:720px;
+}
+.cv-hero .cv-eyebrow{color:#ff8a93;}
+
+.btn-cv-primary{
+  background:var(--cv-red);
+  border:none;
+  color:#fff;
+  font-weight:600;
+  padding:12px 28px;
+  border-radius:4px;
+  display:inline-block;
+  transition:background .15s ease;
+}
+.btn-cv-primary:hover{background:var(--cv-red-dark);color:#fff;text-decoration:none;}
+
+.btn-cv-outline{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.5);
+  color:#fff;
+  font-weight:600;
+  padding:11px 26px;
+  border-radius:4px;
+  display:inline-block;
+}
+.btn-cv-outline:hover{border-color:#fff;text-decoration:none;color:#fff;}
+
+/* Section spacing */
+.cv-section{padding:60px 0;}
+.cv-section-alt{background:var(--cv-gray-light);}
+
+/* Cards */
+.cv-card{
+  background:#fff;
+  border:1px solid var(--cv-border);
+  border-radius:8px;
+  padding:32px;
+  height:100%;
+  transition:box-shadow .15s ease, transform .15s ease;
+}
+.cv-card:hover{box-shadow:0 10px 30px rgba(11,31,58,.08);transform:translateY(-2px);}
+.cv-card h3{margin-top:0;}
+.cv-card .cv-card-number{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;height:36px;
+  background:var(--cv-red);
+  color:#fff;
+  border-radius:50%;
+  font-weight:700;
+  margin-bottom:16px;
+}
+
+/* Stat callouts */
+.cv-stat{
+  text-align:center;
+  padding:20px;
+}
+.cv-stat .cv-stat-num{
+  font-size:2.4rem;
+  font-weight:800;
+  color:var(--cv-red);
+  display:block;
+}
+.cv-stat .cv-stat-label{
+  color:var(--cv-gray);
+  font-size:.95rem;
+}
+
+/* Pull quote / difference box */
+.cv-pullquote{
+  border-left:4px solid var(--cv-red);
+  padding:18px 24px;
+  background:var(--cv-gray-light);
+  font-size:1.05rem;
+  color:var(--cv-navy);
+  margin:24px 0;
+}
+
+/* Steward series portfolio chips */
+.cv-portfolio-chip{
+  border:1px solid var(--cv-border);
+  border-radius:6px;
+  padding:18px 20px;
+  margin-bottom:12px;
+  background:#fff;
+}
+.cv-portfolio-chip .cv-portfolio-name{
+  font-weight:700;
+  color:var(--cv-navy);
+  display:block;
+  margin-bottom:4px;
+}
+.cv-portfolio-chip .cv-portfolio-mix{
+  color:var(--cv-gray);
+  font-size:.92rem;
+}
+
+/* People / bios */
+.cv-bio{
+  border-bottom:1px solid var(--cv-border);
+  padding:28px 0;
+}
+.cv-bio:last-child{border-bottom:none;}
+.cv-bio h4{margin-bottom:2px;color:var(--cv-navy);}
+.cv-bio .cv-bio-title{
+  color:var(--cv-red);
+  font-weight:600;
+  font-size:.92rem;
+  display:block;
+  margin-bottom:12px;
+}
+
+/* Footer */
+footer.cv-footer{
+  background:var(--cv-navy);
+  color:#cdd5e3;
+  padding:40px 0;
+  margin-top:40px;
+}
+footer.cv-footer a{color:#fff;}
+footer.cv-footer strong{color:#fff;}
+
+hr.cv-hr{border-top:1px solid var(--cv-border);margin:0;}
+
+@media (max-width:767px){
+  .cv-hero{padding:70px 0 50px;text-align:left;}
+  h1{font-size:1.9rem;}
+}
