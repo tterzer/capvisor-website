@@ -131,6 +131,18 @@ h3{font-size:1.3rem;}
   margin-bottom:16px;
 }
 
+/* Navy variant — used for the Archives page boxes */
+.cv-card-navy{
+  background:var(--cv-navy);
+  border:1px solid var(--cv-navy);
+  color:#fff;
+}
+.cv-card-navy h3{color:#fff;}
+.cv-card-navy a{color:#fff;text-decoration:underline;}
+.cv-card-navy a:hover{color:#ff8a93;}
+.cv-card-navy .nav-tabs>li>a{color:#fff;background:transparent;border:none;}
+.cv-card-navy .nav-tabs>li.active>a{color:var(--cv-navy);background:#fff;}
+
 /* Stat callouts */
 .cv-stat{
   text-align:center;
@@ -208,43 +220,31 @@ hr.cv-hr{border-top:1px solid var(--cv-border);margin:0;}
   h1{font-size:1.9rem;}
 }
 
-/* Force consistent, much larger type across the whole site — overrides
-   legacy Bootply styles.css rules that left headers/nav text too small */
-html{font-size:18px;}
-body, .container, p, li{font-size:1.15rem !important;line-height:1.75;}
-h1{font-size:3.4rem !important;line-height:1.1;font-weight:800;}
-h2{font-size:2.5rem !important;line-height:1.2;}
-h3{font-size:1.7rem !important;line-height:1.3;}
-h4{font-size:1.4rem !important;}
-.lead{font-size:1.35rem !important;line-height:1.6;}
+/* Targeted fixes for the specific text that was too small in the legacy
+   Bootply theme — nav links and headings. Not a blanket size increase. */
+body, .container, p, li{font-size:16px;line-height:1.65;}
+h1{font-size:2.4rem !important;line-height:1.15;}
+h2{font-size:1.9rem !important;line-height:1.25;}
+h3{font-size:1.35rem !important;line-height:1.3;}
+h4{font-size:1.15rem !important;}
+.lead{font-size:1.1rem !important;line-height:1.6;}
 
-.navbar.navbar-default.navbar-fixed-top{min-height:90px;}
-.navbar-header{min-height:90px;}
 .navbar-default .navbar-nav>li>a{
-  font-size:1.15rem !important;
-  font-weight:700 !important;
-  padding-top:34px !important;
-  padding-bottom:34px !important;
+  font-size:1rem !important;
+  font-weight:600;
+  padding-top:24px;
+  padding-bottom:24px;
 }
-.navbar-brand img.logo{max-height:60px !important;}
-.navbar-brand{padding-top:15px !important;padding-bottom:15px !important;height:90px;}
 
 .nav-tabs>li>a{
-  font-size:1.2rem !important;
-  font-weight:700;
-  padding:12px 20px;
+  font-size:1rem !important;
+  font-weight:600;
+  padding:10px 16px;
 }
 
-.cv-bio h4{font-size:1.6rem !important;}
-.cv-bio-title{font-size:1.1rem !important;}
-.cv-card h3{font-size:1.5rem !important;}
-.cv-card p, .cv-bio p{font-size:1.1rem !important;}
-.cv-eyebrow{font-size:1rem !important;}
-.cv-stat .cv-stat-num{font-size:2.8rem !important;}
-.cv-stat .cv-stat-label{font-size:1.1rem !important;}
-footer.cv-footer, footer.cv-footer p{font-size:1.1rem !important;}
-
-@media (max-width:767px){
-  .navbar.navbar-default.navbar-fixed-top, .navbar-header{min-height:70px;}
-  .navbar-brand img.logo{max-height:42px !important;}
-}
+.cv-bio h4{font-size:1.3rem !important;}
+.cv-bio-title{font-size:.92rem !important;}
+.cv-card h3{font-size:1.2rem !important;}
+.cv-eyebrow{font-size:.8rem !important;}
+.cv-stat .cv-stat-label{font-size:.95rem !important;}
+footer.cv-footer, footer.cv-footer p{font-size:.95rem !important;}
