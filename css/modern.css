@@ -103,7 +103,7 @@ h2{margin-bottom:1rem;}
 .btn-cv-outline:hover{border-color:#fff;text-decoration:none;color:#fff;}
 
 /* Section spacing */
-.cv-section{padding:60px 0;}
+.cv-section{padding:40px 0;}
 .cv-section-alt{background:var(--cv-gray-light);}
 
 /* Cards */
